@@ -1,0 +1,37 @@
+<div id="sign-in">
+  <section class="container">
+    <h1 class="topic">eexam</h1>
+    <div class="lang">
+      <button mat-flat-button (click)="changeLanguage()">
+        <span class="ff-nsneo">{{ isKor ? "ENG" : "한글" }}</span>
+      </button>
+    </div>
+    <ng-container *ngIf="stage === 1; then exam" />
+    <ng-container *ngIf="stage === 2; then exam" />
+    <ng-container *ngIf="stage === 3; then exam" />
+    <ng-container *ngIf="stage === 4; then exam" />
+    <div class="alert" *ngIf="alertMsg">
+      <p>{{ alertMsg }}</p>
+    </div>
+  </section>
+</div>
+
+<ng-template #exam>
+  <h5>{{ "0" + stage }}</h5>
+  <h3>{{ t(currExam.label) }}</h3>
+  <form [formGroup]="examForm" (ngSubmit)="nextStage(currExam.id)">
+    <mat-radio-group required [formControlName]="currExam.id" class="mat-radio-group">
+      <mat-radio-button *ngFor="let option of currExam.options" [value]="option.value">
+        {{ t(option.label) }}
+      </mat-radio-button>
+    </mat-radio-group>
+    <div class="next">
+      <button
+        mat-icon-button
+        type="submit"
+        [disabled]="!(examForm.controls[currExam.id].status === 'VALID')">
+        <mat-icon fontIcon="arrow_forward_ios" />
+      </button>
+    </div>
+  </form>
+</ng-template>

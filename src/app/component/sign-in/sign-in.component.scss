@@ -1,0 +1,73 @@
+@import "src/styles/mixin";
+
+#sign-in {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $teal_1;
+}
+
+.container {
+  min-width: 240px;
+  padding: 32px;
+  position: relative;
+  background-color: $white;
+  border-radius: 10px;
+}
+
+h3 {
+  margin-bottom: 20px;
+}
+
+h5 {
+  margin-bottom: 4px;
+}
+
+.topic {
+  position: absolute;
+  top: -1.75rem;
+  left: 12px;
+  color: $white;
+  font-weight: 900;
+}
+
+.lang {
+  position: absolute;
+  top: -32px;
+  right: 0;
+
+  button {
+    height: 32px;
+    margin: 0 -8px;
+    background-color: transparent;
+    span {
+      width: 40px;
+    }
+  }
+}
+
+.next {
+  position: absolute;
+  bottom: 12px;
+  right: 8px;
+}
+
+.alert {
+  position: absolute;
+  bottom: -24px;
+  left: 16px;
+
+  p {
+    font-weight: 700;
+    font-size: 0.8rem;
+    color: $od-accent;
+  }
+}
+
+.mat-radio-group {
+  margin-left: -8px;
+  display: flex;
+  flex-direction: column;
+}

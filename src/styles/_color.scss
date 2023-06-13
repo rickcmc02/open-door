@@ -1,0 +1,154 @@
+// src: open-color
+$gray_0: #f8f9fa;
+$gray_1: #f1f3f5;
+$gray_2: #e9ecef;
+$gray_3: #dee2e6;
+$gray_4: #ced4da;
+$gray_5: #adb5bd;
+$gray_6: #868e96;
+$gray_7: #495057;
+$gray_8: #343a40;
+$gray_9: #212529;
+
+$teal_0: #e6fcf5;
+$teal_1: #c3fae8;
+$teal_2: #96f2d7;
+$teal_3: #63e6be;
+$teal_4: #38d9a9;
+$teal_5: #20c997;
+$teal_6: #12b886;
+$teal_7: #0ca678;
+$teal_8: #099268;
+$teal_9: #087f5b;
+
+$grape_0: #f8f0fc;
+$grape_1: #f3d9fa;
+$grape_2: #eebefa;
+$grape_3: #e599f7;
+$grape_4: #da77f2;
+$grape_5: #cc5de8;
+$grape_6: #be4bdb;
+$grape_7: #ae3ec9;
+$grape_8: #9c36b5;
+$grape_9: #862e9c;
+
+$red_0: #fff5f5;
+$red_1: #ffe3e3;
+$red_2: #ffc9c9;
+$red_3: #ffa8a8;
+$red_4: #ff8787;
+$red_5: #ff6b6b;
+$red_6: #fa5252;
+$red_7: #f03e3e;
+$red_8: #e03131;
+$red_9: #c92a2a;
+
+$white: #ffffff;
+$black: #000000;
+$soft-white: $gray_0;
+$soft-black: $gray_9;
+
+$dark-primary-text: $soft-black;
+$light-primary-text: $soft-white;
+$od-primary: $teal_4;
+$od-accent: $grape_4;
+$od-warn: $red_4;
+
+$teal-palette: (
+  50: $teal_0,
+  100: $teal_1,
+  200: $teal_2,
+  300: $teal_3,
+  400: $teal_4,
+  500: $teal_5,
+  600: $teal_6,
+  700: $teal_7,
+  800: $teal_8,
+  900: $teal_9,
+  A100: $teal_1,
+  A200: $teal_2,
+  A400: $teal_4,
+  A700: $teal_7,
+  contrast: (
+    50: $dark-primary-text,
+    100: $dark-primary-text,
+    200: $dark-primary-text,
+    300: $light-primary-text,
+    400: $light-primary-text,
+    500: $light-primary-text,
+    600: $light-primary-text,
+    700: $light-primary-text,
+    800: $light-primary-text,
+    900: $light-primary-text,
+    A100: $dark-primary-text,
+    A200: $light-primary-text,
+    A400: $light-primary-text,
+    A700: $light-primary-text
+  )
+);
+
+$grape-palette: (
+  50: $grape_0,
+  100: $grape_1,
+  200: $grape_2,
+  300: $grape_3,
+  400: $grape_4,
+  500: $grape_5,
+  600: $grape_6,
+  700: $grape_7,
+  800: $grape_8,
+  900: $grape_9,
+  A100: $grape_1,
+  A200: $grape_2,
+  A400: $grape_4,
+  A700: $grape_7,
+  contrast: (
+    50: $dark-primary-text,
+    100: $dark-primary-text,
+    200: $dark-primary-text,
+    300: $light-primary-text,
+    400: $light-primary-text,
+    500: $light-primary-text,
+    600: $light-primary-text,
+    700: $light-primary-text,
+    800: $light-primary-text,
+    900: $light-primary-text,
+    A100: $dark-primary-text,
+    A200: $light-primary-text,
+    A400: $light-primary-text,
+    A700: $light-primary-text
+  )
+);
+
+$red_palette: (
+  50: $red_0,
+  100: $red_1,
+  200: $red_2,
+  300: $red_3,
+  400: $red_4,
+  500: $red_5,
+  600: $red_6,
+  700: $red_7,
+  800: $red_8,
+  900: $red_9,
+  A100: $red_1,
+  A200: $red_2,
+  A400: $red_4,
+  A700: $red_7,
+  contrast: (
+    50: $dark-primary-text,
+    100: $dark-primary-text,
+    200: $dark-primary-text,
+    300: $light-primary-text,
+    400: $light-primary-text,
+    500: $light-primary-text,
+    600: $light-primary-text,
+    700: $light-primary-text,
+    800: $light-primary-text,
+    900: $light-primary-text,
+    A100: $dark-primary-text,
+    A200: $light-primary-text,
+    A400: $light-primary-text,
+    A700: $light-primary-text
+  )
+);
