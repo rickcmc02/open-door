@@ -11,6 +11,8 @@
 
 .container {
   min-width: 240px;
+  width: 85vw;
+  max-width: 360px;
   padding: 32px;
   position: relative;
   background-color: $white;
@@ -27,7 +29,7 @@ h5 {
 
 .topic {
   position: absolute;
-  top: -1.75rem;
+  top: -2rem;
   left: 12px;
   color: $white;
   font-weight: 900;
@@ -55,9 +57,10 @@ h5 {
 }
 
 .alert {
+  min-height: 40px;
   position: absolute;
-  bottom: -24px;
-  left: 16px;
+  bottom: -52px;
+  left: 12px;
 
   p {
     font-weight: 700;

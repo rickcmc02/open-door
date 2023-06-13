@@ -1,6 +1,6 @@
 <div id="sign-in">
   <section class="container">
-    <h1 class="topic">eexam</h1>
+    <h1 class="topic">munheeexam</h1>
     <div class="lang">
       <button mat-flat-button (click)="changeLanguage()">
         <span class="ff-nsneo">{{ isKor ? "ENG" : "한글" }}</span>
@@ -10,8 +10,8 @@
     <ng-container *ngIf="stage === 2; then exam" />
     <ng-container *ngIf="stage === 3; then exam" />
     <ng-container *ngIf="stage === 4; then exam" />
-    <div class="alert" *ngIf="alertMsg">
-      <p>{{ alertMsg }}</p>
+    <div class="alert">
+      <p>{{ t(alertMsg) }}</p>
     </div>
   </section>
 </div>

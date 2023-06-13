@@ -1,12 +1,12 @@
 {
   "nationality": {
     "id": "nationality",
-    "label": "Nationality",
+    "label": "What is her nationality?",
     "options": [
       {
         "value": "england",
         "label": "England",
-        "msg": "Not England"
+        "msg": "She had a great times in England, but she is not British."
       },
       {
         "value": "korea",
@@ -16,33 +16,33 @@
       {
         "value": "mexico",
         "label": "Mexico",
-        "msg": "Not Mexico"
+        "msg": "She likes tacos. If you have a favor to ask of her, take her to a Mexican restaurant."
       },
       {
         "value": "thailand",
         "label": "Thailand",
-        "msg": "Not Thailand"
+        "msg": "Thai food is one of her favorites, but she is not Thai."
       }
     ]
   },
   "source": {
     "id": "source",
-    "label": "Source",
+    "label": "Where is the source of her beauty?",
     "options": [
       {
         "value": "eyes",
         "label": "Eyes",
-        "msg": "Not eyes"
+        "msg": "I agree. She has beautiful eyes, but there is a better answer."
       },
       {
         "value": "nose",
         "label": "Nose",
-        "msg": "Not nose"
+        "msg": "Her sharp nose? You are getting warmer!"
       },
       {
         "value": "mouth",
         "label": "Mouth",
-        "msg": "Not mouth"
+        "msg": "Almost there! Have you seen her beautiful smile? You should see."
       },
       {
         "value": "all",
@@ -53,17 +53,17 @@
   },
   "animal": {
     "id": "animal",
-    "label": "Animal",
+    "label": "What animal character is on her birthday cake?",
     "options": [
       {
         "value": "elephant",
         "label": "Elephant",
-        "msg": "Not elephant"
+        "msg": "Are you supporting Donald Tru... nevermind."
       },
       {
         "value": "donkey",
         "label": "Donkey",
-        "msg": "Not donkey"
+        "msg": "Donkey Kong[c] is a 1981 arcade video game developed and published by Nintendo."
       },
       {
         "value": "quokka",
@@ -73,13 +73,13 @@
       {
         "value": "rabbit",
         "label": "Rabbit",
-        "msg": "Not rabbit"
+        "msg": "BUGS BUNNY!!!!!"
       }
     ]
   },
   "date": {
     "id": "date",
-    "label": "Date",
+    "label": "When is her birthday?",
     "options": [
       {
         "value": "0229",
