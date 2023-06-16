@@ -53,7 +53,7 @@ export class SignInComponent {
         // 마지막 문제를 정상적으로 제출한 경우
         if (this.examForm.status === "VALID") {
           // 전체 FormGroup 유효성 검증
-          console.log("all passed");
+          console.log("all passed"); // 화면 전환되는 메인 페이지로 이동 --> 위아래 snap scroll
         } else {
           alert(this.t("Error on submit. Please try again."));
         }
