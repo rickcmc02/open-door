@@ -42,10 +42,41 @@
   color: $soft-white;
 }
 /* coloration */
-.container > div:nth-child(even) {
-  background-color: $od-primary;
+.container {
+    .cover-layer {
+        width: 100%;
+        height: 100%;
+        opacity: 0.5;
+    }
+    .image-box:nth-child(even) .cover-layer {
+        background-color: $od-primary;
+    }
+    .image-box:nth-child(odd) .cover-layer {
+        background-color: $od-accent;
+    }
+
 }
 
-.container > div:nth-child(odd) {
-  background-color: $od-accent;
+.container > div:nth-child(even) .cover-layer {}
+
+#first-box {
+    background-image: url("../../../assets/image/mun-1.jpeg");
+}
+
+#second-box {
+    background-image: url("../../../assets/image/mun-2.jpeg");
+}
+
+#third-box {
+    background-image: url("../../../assets/image/mun-3.jpeg");
+}
+
+#fourth-box {
+    background-image: url("../../../assets/image/mun-4.jpeg");
+}
+
+.image-box {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }

@@ -11,8 +11,9 @@
 
 .container {
   min-width: 240px;
-  width: 85vw;
+  width: 90vw;
   max-width: 360px;
+  box-sizing: border-box;
   padding: 32px;
   position: relative;
   background-color: $white;
