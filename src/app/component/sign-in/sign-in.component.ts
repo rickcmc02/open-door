@@ -1,14 +1,15 @@
 import { Component } from "@angular/core";
 import { FormGroup, FormControl, Validators } from "@angular/forms";
+import { Title } from "@angular/platform-browser";
+import { Router } from "@angular/router";
 
 import { CookieService } from "ngx-cookie-service";
 
 import { ExamAnswer, ExamContent, ExamData } from "src/app/model/exam.model";
-import { Translator } from "src/app/model/base.model";
-import i18n from "src/assets/data/i18n.json";
+import { Translation } from "src/app/model/base.model"
 import exam from "src/assets/data/exam.json";
 import examAnswer from "src/assets/data/exam-answer.json";
-import { Title } from "@angular/platform-browser";
+import i18n from "src/assets/data/i18n.json";
 
 @Component({
   selector: "app-sign-in",
@@ -17,7 +18,7 @@ import { Title } from "@angular/platform-browser";
 })
 export class SignInComponent {
   isKor: boolean;
-  translator: Translator = i18n;
+  translation: Translation = i18n;
   alertMsg = "";
   stage = 1;
   examTopics = Object.keys(exam);
@@ -26,9 +27,9 @@ export class SignInComponent {
   currExam: ExamContent;
   examForm: FormGroup = new FormGroup({});
 
-  constructor(private titleService: Title, private cookieService: CookieService) {
-    titleService.setTitle("eexam");
-    const cookieLang = cookieService.get("lang");
+  constructor(private titleService: Title, private cookieService: CookieService, private router: Router) {
+    this.titleService.setTitle("munheeexam");
+    const cookieLang = this.cookieService.get("lang");
     this.isKor = cookieLang === "ko";
     for (const topic of this.examTopics) {
       this.examForm.addControl(topic, new FormControl<string>("", Validators.required));
@@ -36,15 +37,15 @@ export class SignInComponent {
     this.currExam = this.examData[this.examTopics[this.stage - 1]];
   }
 
-  t(label: string): string {
+  t = (label: string): string => {
     let translatedLabel = label;
-    if (this.isKor && this.translator[label]) translatedLabel = this.translator[label];
+    if (this.isKor && this.translation[label]) translatedLabel = this.translation[label];
     return translatedLabel;
   }
 
   changeLanguage(): void {
-    this.isKor = !this.isKor;
-    this.cookieService.set("lang", this.isKor ? "ko" : "en");
+    this.cookieService.set("lang", this.isKor ? "en" : "ko");
+    this.isKor = !this.isKor
   }
 
   nextStage(currStageId: string): void {
@@ -53,7 +54,9 @@ export class SignInComponent {
         // 마지막 문제를 정상적으로 제출한 경우
         if (this.examForm.status === "VALID") {
           // 전체 FormGroup 유효성 검증
-          console.log("all passed"); // 화면 전환되는 메인 페이지로 이동 --> 위아래 snap scroll
+          console.log("all passed");
+          this.cookieService.set("exam", "passed")
+          this.router.navigate(["/main"]);
         } else {
           alert(this.t("Error on submit. Please try again."));
         }

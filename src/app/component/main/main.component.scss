@@ -1,0 +1,51 @@
+@import "src/styles/mixin";
+
+.holster {
+  height: 100%;
+}
+.holster {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-flow: column nowrap;
+}
+
+.container {
+  display: flex;
+  overflow: auto;
+  outline: 1px dashed lightgray;
+  flex: none;
+}
+
+.container.y {
+  width: 100vw;
+  height: 100vh;
+  flex-flow: column nowrap;
+}
+/* scroll-snap */
+.y.mandatory-scroll-snapping {
+  scroll-snap-type: y mandatory;
+}
+
+.container > div {
+  text-align: center;
+  scroll-snap-align: center;
+  flex: none;
+}
+
+.y.container > div {
+  line-height: 256px;
+  font-size: 64px;
+  font-weight: 900;
+  width: 100vw;
+  height: 100%;
+  color: $soft-white;
+}
+/* coloration */
+.container > div:nth-child(even) {
+  background-color: $od-primary;
+}
+
+.container > div:nth-child(odd) {
+  background-color: $od-accent;
+}
