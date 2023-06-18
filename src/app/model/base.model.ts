@@ -1,3 +1,3 @@
-export interface Translator {
+export interface Translation {
   [key: string]: string;
 }

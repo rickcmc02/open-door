@@ -84,22 +84,22 @@
       {
         "value": "0229",
         "label": "29th Feb",
-        "msg": "Not 29th Feb"
+        "msg": "Too early."
       },
       {
         "value": "0431",
         "label": "31st April",
-        "msg": "Not 31st April"
+        "msg": "Maybe later?"
       },
       {
         "value": "0626",
         "label": "26th June",
-        "msg": "Not 26th June"
+        "msg": "Correct"
       },
       {
         "value": "1225",
         "label": "25th December",
-        "msg": "Not 25th December"
+        "msg": "Too late."
       }
     ]
   }
