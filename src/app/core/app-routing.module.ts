@@ -4,7 +4,7 @@ import { SignInComponent } from "src/app/component/sign-in/sign-in.component";
 import { MainComponent } from '../component/main/main.component';
 
 const routes: Routes = [
-  { path: "sign-in", component: SignInComponent },
+  { path: "", component: SignInComponent },
   { path: "main", component: MainComponent }
 ];
 

@@ -13,7 +13,7 @@ export class AppComponent {
   constructor (private cookieService: CookieService, private router: Router) {
     const examResult = this.cookieService.get("exam")
     if (!examResult) {
-      this.router.navigate(["/sign-in"]);
+      this.router.navigate(["/"]);
     }
   }
 }

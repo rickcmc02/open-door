@@ -58,12 +58,12 @@
       {
         "value": "elephant",
         "label": "Elephant",
-        "msg": "Are you supporting Donald Tru... nevermind."
+        "msg": "Too big!"
       },
       {
         "value": "donkey",
         "label": "Donkey",
-        "msg": "Donkey Kong[c] is a 1981 arcade video game developed and published by Nintendo."
+        "msg": "Smaller than that."
       },
       {
         "value": "quokka",
@@ -73,7 +73,7 @@
       {
         "value": "rabbit",
         "label": "Rabbit",
-        "msg": "BUGS BUNNY!!!!!"
+        "msg": "Almost there!"
       }
     ]
   },
