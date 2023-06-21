@@ -6,6 +6,7 @@
         <span class="ff-nsneo">{{ isKor ? "ENG" : "한글" }}</span>
       </button>
     </div>
+    <ng-container *ngIf="stage === 0; then intro" />
     <ng-container *ngIf="stage === 1; then exam" />
     <ng-container *ngIf="stage === 2; then exam" />
     <ng-container *ngIf="stage === 3; then exam" />
@@ -15,6 +16,14 @@
     </div>
   </section>
 </div>
+
+<ng-template #intro>
+  <div class="intro-box">    
+    <h4>{{ t("Welcome to munheeexam") }}</h4>
+    <h6>{{ t("When you're ready, press the start button.") }}</h6>
+    <button mat-button color="accent" class="start-btn" (click)="startExam()">{{ t("Start exam") }}</button>
+  </div>
+</ng-template>
 
 <ng-template #exam>
   <h5>{{ "0" + stage }}</h5>

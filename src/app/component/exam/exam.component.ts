@@ -12,15 +12,15 @@ import examAnswer from "src/assets/data/exam-answer.json";
 import i18n from "src/assets/data/i18n.json";
 
 @Component({
-  selector: "app-sign-in",
-  templateUrl: "./sign-in.component.html",
-  styleUrls: ["./sign-in.component.scss"]
+  selector: "app-exam",
+  templateUrl: "./exam.component.html",
+  styleUrls: ["./exam.component.scss"]
 })
-export class SignInComponent {
+export class ExamComponent {
   isKor: boolean;
   translation: Translation = i18n;
   alertMsg = "";
-  stage = 1;
+  stage = 0;
   examTopics = Object.keys(exam);
   examData: ExamData = exam;
   examAns: ExamAnswer = examAnswer;
@@ -46,6 +46,11 @@ export class SignInComponent {
   changeLanguage(): void {
     this.cookieService.set("lang", this.isKor ? "en" : "ko");
     this.isKor = !this.isKor
+  }
+
+  startExam(): void {
+    this.stage += 1;
+    this.currExam = this.examData[this.examTopics[this.stage - 1]];
   }
 
   nextStage(currStageId: string): void {
