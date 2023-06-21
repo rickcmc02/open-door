@@ -8,6 +8,8 @@ const routes: Routes = [
   { path: "main", component: MainComponent }
 ];
 
+// 시험을 exam으로 두고 시험 동의를 인덱스로 두는 안 고려
+
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
