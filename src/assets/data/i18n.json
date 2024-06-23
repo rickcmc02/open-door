@@ -1,4 +1,7 @@
 {
+  "Welcome to munheeexam": "무니 이해력 검정시험에 오신 것을 환영합니다",
+  "When you're ready, press the start button.": "준비가 되셨다면, 시험 시작 버튼을 눌러주세요.",
+  "Start exam": "시험 시작하기",
   "Nationality": "국적",
   "England": "영국",
   "Korea": "대한민국",
@@ -22,7 +25,7 @@
   "Error on submit. Please try again.": "문제 제출에 오류가 있습니다. 다시 시도해주세요.",
   "What is her nationality?": "어느나라 사람일까요?",
   "She had a great times in England, but she is not British.": "잠시 영국에 지내며 좋은 추억을 쌓았지만, 무니는 영국 사람이 아닙니다.",
-  "She likes tacos. If you have a favor to ask of her, take her to a Mexican restaurant.": "무니는 타코를 좋아합니다. 무니에게 부탁할 일이 있다면 먼저 멕시칸 레스토랑에 데려가는 것은 어떨까요?",
+  "She likes tacos. Mexican restaurant is a good option to go with.": "무니는 타코를 좋아합니다. 무니를 멕시칸 레스토랑에 데려가세요.",
   "Thai food is one of her favorites, but she is not Thai.": "무니가 태국음식을 좋아하긴하죠. 하지만 태국 사람은 아니라고 합니다.",
   "Where is the source of her beauty?": "아름다움의 원천은 어디일까요?",
   "I agree. She has beautiful eyes, but there is a better answer.": "눈 이쁜 것 인정합니다. 그렇지만 더 나은 정답이 있지 않을까요?",

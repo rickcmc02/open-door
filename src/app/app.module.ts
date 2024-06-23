@@ -5,16 +5,16 @@ import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { MatFormFieldModule } from "@angular/material/form-field";
 import { MatInputModule } from "@angular/material/input";
 import { MatRadioModule } from "@angular/material/radio";
+import { MatButtonModule } from "@angular/material/button";
+import { MatIconModule } from "@angular/material/icon";
 
 import { AppRoutingModule } from "src/app/core/app-routing.module";
 import { AppComponent } from "./app.component";
-import { SignInComponent } from "./component/sign-in/sign-in.component";
-import { MatButtonModule } from "@angular/material/button";
-import { MatIconModule } from "@angular/material/icon";
+import { ExamComponent } from "./component/exam/exam.component";
 import { MainComponent } from './component/main/main.component';
 
 @NgModule({
-  declarations: [AppComponent, SignInComponent, MainComponent],
+  declarations: [AppComponent, ExamComponent, MainComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
