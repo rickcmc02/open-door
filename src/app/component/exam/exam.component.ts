@@ -6,7 +6,7 @@ import { Router } from "@angular/router";
 import { CookieService } from "ngx-cookie-service";
 
 import { ExamAnswer, ExamContent, ExamData } from "src/app/model/exam.model";
-import { Translation } from "src/app/model/base.model"
+import { Translation } from "src/app/model/base.model";
 import exam from "src/assets/data/exam.json";
 import examAnswer from "src/assets/data/exam-answer.json";
 import i18n from "src/assets/data/i18n.json";
@@ -27,8 +27,12 @@ export class ExamComponent {
   currExam: ExamContent;
   examForm: FormGroup = new FormGroup({});
 
-  constructor(private titleService: Title, private cookieService: CookieService, private router: Router) {
-    this.titleService.setTitle("munheeexam");
+  constructor(
+    private titleService: Title,
+    private cookieService: CookieService,
+    private router: Router
+  ) {
+    this.titleService.setTitle("Loveexam");
     const cookieLang = this.cookieService.get("lang");
     this.isKor = cookieLang === "ko";
     for (const topic of this.examTopics) {
@@ -41,11 +45,11 @@ export class ExamComponent {
     let translatedLabel = label;
     if (this.isKor && this.translation[label]) translatedLabel = this.translation[label];
     return translatedLabel;
-  }
+  };
 
   changeLanguage(): void {
     this.cookieService.set("lang", this.isKor ? "en" : "ko");
-    this.isKor = !this.isKor
+    this.isKor = !this.isKor;
   }
 
   startExam(): void {
@@ -60,7 +64,7 @@ export class ExamComponent {
         if (this.examForm.status === "VALID") {
           // 전체 FormGroup 유효성 검증
           console.log("all passed");
-          this.cookieService.set("exam", "passed")
+          this.cookieService.set("exam", "passed");
           this.router.navigate(["/main"]);
         } else {
           alert(this.t("Error on submit. Please try again."));
