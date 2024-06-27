@@ -8,12 +8,12 @@ Angular 기반으로 제작되었으며, PC/모바일 환경에서 모두 동작
 
 ### 정답과 오답
 
-![alt text](question1.png)
+![alt text](/img/question1.png){: width="300"}
 오답을 선택하고 다음 단계로 넘어가려 할 경우, 아래에 힌트가 표기됩니다.
 
 ### 결과 페이지
 
-![alt text](result1.png)
+![alt text](/img/result1.png){: width="250"}
 모든 단계를 통과하고 나면, 한장씩 슬라이드가 가능한 페이지가 나옵니다.
 결과 슬라이드에 연인의 사진을 세팅할 수 있습니다.
 
