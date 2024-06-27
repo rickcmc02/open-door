@@ -35,7 +35,7 @@
 
 .y.container > div {
   line-height: 256px;
-  font-size: 64px;
+  font-size: 48px;
   font-weight: 900;
   width: 100vw;
   height: 100%;
@@ -89,22 +89,23 @@
   }
 }
 
-.container > div:nth-child(even) .cover-layer {}
+.container > div:nth-child(even) .cover-layer {
+}
 
 #first-box {
-    background-image: url("../../../assets/image/mun-1.jpeg");
+  background-image: url("../../../assets/image/love-1.webp");
 }
 
 #second-box {
-    background-image: url("../../../assets/image/mun-2.jpeg");
+  background-image: url("../../../assets/image/love-2.webp");
 }
 
 #third-box {
-    background-image: url("../../../assets/image/mun-3.jpeg");
+  background-image: url("../../../assets/image/love-3.png");
 }
 
 #fourth-box {
-    background-image: url("../../../assets/image/mun-4.jpeg");
+  background-image: url("../../../assets/image/love-4.webp");
 }
 
 .image-box {

@@ -1,27 +1,27 @@
 # OpenDoor
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.7.
+사랑은 열린 문, 연인 이해력 검정시험을 소개합니다.
+http://loveexam.retriever.kr/ (추후 https로 업데이트될 예정입니다)
+연인에 대한 즐거운 질문 페이지를 만들어봐요!
 
-## Development server
+Angular 기반으로 제작되었으며, PC/모바일 환경에서 모두 동작합니다. 모바일에 좀 더 최적화된 사이즈입니다.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### 정답과 오답
 
-## Code scaffolding
+![alt text](/img/question1.png)
+오답을 선택하고 다음 단계로 넘어가려 할 경우, 아래에 힌트가 표기됩니다.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### 결과 페이지
 
-## Build
+![alt text](/img/result1.png)
+모든 단계를 통과하고 나면, 한장씩 슬라이드가 가능한 페이지가 나옵니다.
+결과 슬라이드에 연인의 사진을 세팅할 수 있습니다.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### 한/영
 
-## Running unit tests
+i18n 베이스로, 한/영 변환을 설정할 수 있습니다.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### 실행
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+`yarn`
+`yarn start`

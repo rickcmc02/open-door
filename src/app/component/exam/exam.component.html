@@ -1,6 +1,6 @@
 <div id="sign-in">
   <section class="container">
-    <h1 class="topic">munheeexam</h1>
+    <h1 class="topic">Loveexam</h1>
     <div class="lang">
       <button mat-flat-button (click)="changeLanguage()">
         <span class="ff-nsneo">{{ isKor ? "ENG" : "한글" }}</span>
@@ -18,10 +18,12 @@
 </div>
 
 <ng-template #intro>
-  <div class="intro-box">    
-    <h4>{{ t("Welcome to munheeexam") }}</h4>
+  <div class="intro-box">
+    <h4>{{ t("Welcome to Loveexam") }}</h4>
     <h6>{{ t("When you're ready, press the start button.") }}</h6>
-    <button mat-button color="accent" class="start-btn" (click)="startExam()">{{ t("Start exam") }}</button>
+    <button mat-button color="accent" class="start-btn" (click)="startExam()">
+      {{ t("Start exam") }}
+    </button>
   </div>
 </ng-template>
 
